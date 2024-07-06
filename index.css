@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,18 +7,19 @@
 }
 
 :root {
-    --cor-primaria: #153448;
-    --cor-secundaria: #3C5B6F;
-    --cor-terciaria: #948979;
-    --cor-quatenaria: #DFD0B8;
+    --cor-primaria: #00224D;
+    --cor-secundaria: #5D0E41;
+    --cor-terciaria: #A0153E;
+    --cor-quatenaria: #FF204E;
+    --cor-texto: #F5E7B2;
 }
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: var(--cor-quatenaria);
-    background: repeating-conic-gradient(from 30deg,#0000 0 120deg,#948979 0 180deg) 
+    color: var(--cor-texto);
+    background: repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--cor-terciaria) 0 180deg) 
         200px 115.39999999999999px,
-        repeating-conic-gradient(from 30deg,#153448 0 60deg,#3c5b6f 0 120deg,#948979 0 180deg);
+        repeating-conic-gradient(from 30deg,var(--cor-primaria) 0 60deg,var(--cor-secundaria) 0 120deg, var(--cor-terciaria) 0 180deg);
     background-size: 400px 231px;
 }
 
@@ -35,6 +38,10 @@ body {
     justify-content: space-between;
     padding: .5rem;
     background-color: var(--cor-primaria);
+}
+
+.banner .info p {
+    font-family: "Playwrite GB S", cursive;
 }
 
 .banner .slider {
@@ -65,7 +72,7 @@ body {
 
 .banner .slider .item .filme__info p {
     font-size: .7rem;
-    color: var(--cor-quatenaria);
+    color: var(--cor-texto);
 }
 
 
